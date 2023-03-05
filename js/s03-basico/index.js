@@ -1,1 +1,1 @@
-console.log("Olá do arquivo externo JavaScript");
+// console.log("Olá do arquivo externo JavaScript");
