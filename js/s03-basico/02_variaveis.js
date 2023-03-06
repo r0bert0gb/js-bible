@@ -74,9 +74,9 @@
  * 4 - const
 */
 
-const meuBooleano = true;
+// const meuBooleano = true;
 
-console.log(meuBooleano);
+// console.log(meuBooleano);
 
 // erro: assignment para constante
 // meuBooleano = false;
@@ -84,3 +84,64 @@ console.log(meuBooleano);
 // erro: "Já foi declarada"
 /* O log acima não é executado. O erro foi avaliado PRIMEIRO */
 // const meuBooleano = false;
+
+/* Desafio 1:
+
+Declarar variável "meuObjeto" e assinalar o valor {}
+
+Printar a variável no console.
+
+Nota: "meuObjeto" não pode ser reassinalada.
+*/
+// const meuObjeto = {};
+
+// console.log(meuObjeto);
+
+/* Desafio 2:
+
+declarar:
+
+- variável "x" e assinalar o valor 10.
+- "y", assinalar o valor true
+- "meuObjeto" com dois pares nome-valor
+- "outroObjeto".
+	- depois, assinalar um objeto com 3 pares nome-valor
+*/
+
+// console.log(meuObjeto);
+/*
+ {a: 10, b: true, prototype: Object}
+*/
+
+// console.log(outroObjeto);
+/*
+ {
+	novoA: 20,
+	b: true,
+	c: {a: 10, b: true, prototype: Object},
+	prototype: Object
+ }
+*/
+
+// let x = 10;
+
+// const y = true;
+
+// const meuObjeto = {
+// 	a: x,
+// 	b: y
+// };
+
+// console.log(meuObjeto);
+
+// x = 20;
+
+// let outroObjeto;
+
+// outroObjeto = {
+// 	novoA: x,
+// 	b: y,
+// 	c: meuObjeto
+// };
+
+// console.log(outroObjeto);
