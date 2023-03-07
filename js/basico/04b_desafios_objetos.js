@@ -45,8 +45,8 @@
 // meuPost.share = false;
 // console.log(meuPost);
 
-// // meuPost.likesPost += meuPost.likesPost + 1; // funciona
-// // meuPost.likesPost++; // funciona
+// meuPost.likesPost += meuPost.likesPost + 1; // funciona
+// meuPost.likesPost++; // funciona
 // meuPost.likesPost += 1;
 // console.log(meuPost);
 
