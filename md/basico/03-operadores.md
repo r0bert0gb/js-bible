@@ -128,3 +128,5 @@ console.log(Number(minhaString) === meuNumero);
 [Topo](#operadores-em-js)
 
 ## Operadores lógicos
+
+AND, OR e NOT
