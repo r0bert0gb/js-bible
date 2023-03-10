@@ -30,18 +30,18 @@
 
 // console.log(myNumber);
 
-// // declaração
+// declaração
 // let minhaString;
 
-// // undefined
+// undefined
 // console.log(minhaString);
 
-// // assignment
+// assignment
 // minhaString = "Olá da String";
 
 // console.log(minhaString);
 
-// // re-assignment
+// re-assignment
 // minhaString = "Novo valor";
 
 // console.log(minhaString);
@@ -54,18 +54,18 @@
 
 // console.log(myNumber);
 
-// // declaração
+// declaração
 // var minhaString;
 
-// // undefined
+// undefined
 // console.log(minhaString);
 
-// // assignment
+// assignment
 // minhaString = "Olá da String";
 
 // console.log(minhaString);
 
-// // re-assignment
+// re-assignment
 // minhaString = "Novo valor";
 
 // console.log(minhaString);
