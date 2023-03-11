@@ -10,6 +10,7 @@
     - [Comparando strings](#comparando-strings)
     - [Operadores de (Des)Igualdade](#operadores-de-desigualdade)
   - [Operadores lógicos](#operadores-lógicos)
+    - [Novidade: operadores de atribuição](#novidade-operadores-de-atribuição)
 
 Operadores em JS são, por baixo dos panos, simplesmente funções.
 Por questões de brevidade, apontar apenas os operadores que são novidade.
@@ -129,4 +130,22 @@ console.log(Number(minhaString) === meuNumero);
 
 ## Operadores lógicos
 
-AND, OR e NOT
+AND `&&`, OR `||` e NOT `!`
+
+☝ Lembrar de valores truthy e falsy
+
+```js
+// teste rápido para valores falsy
+!!variável;
+!!"abc";
+```
+
+### Novidade: operadores de atribuição
+
+além dos já conhecidos:
+
+- **=
+  - potenciação
+  - `x **= y`: X elevado a Y
+- %=
+  - `x %= y`: Resto da divisão por Y
