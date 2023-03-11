@@ -40,7 +40,7 @@ Usada com operadores binários
 
 ### Prefix Notation
 
-Usada com operadores binários
+Usada com operadores unários
 
 - `++a`
 - `delete obj.a`
@@ -48,7 +48,7 @@ Usada com operadores binários
 
 ### Postfix Notation
 
-Usada com operadores binários
+Usada com operadores unários
 
 - `a++`
 - `minhaFuncao()`
@@ -129,6 +129,15 @@ console.log(Number(minhaString) === meuNumero);
 [Topo](#operadores-em-js)
 
 ## Operadores lógicos
+
+Valores Falsy:
+
+- undefined
+- null
+- 0
+- ""
+- NaN
+- false
 
 AND `&&`, OR `||` e NOT `!`
 
