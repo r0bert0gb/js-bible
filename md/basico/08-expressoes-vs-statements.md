@@ -79,7 +79,7 @@ const b = 5;
 // ^-- nesse caso, usar ";"
 
 if (a > b) {
-  // ^-- statement
+//☝ if statement
   console.log("A é maior!");
   // ^-- expressão
 }
