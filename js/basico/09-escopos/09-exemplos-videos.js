@@ -56,29 +56,106 @@ são globais!
 * Exemplo 2: function scope
 ------------------------------------------------------*/
 
-let e;
+// let e;
 
-function minhaFuncao(a, b){
-	const c = true;
+// function minhaFuncao(a, b){
+	// const c = true;
 
-	console.log(c); // true
+	// console.log(c); // true
 	// pelo scope chain, c já está no escopo da função
 
 	// console.log(d);
 	// Uncaught ReferenceError: d is not defined
 
-	console.log(e); // undefined
+	// console.log(e); // undefined
 
 	// console.log(a + ", " + b); // (string)
-	console.log(a, b); // número
+	// console.log(a, b); // número
 	// valor dos parâmetros a e b
-}
+// }
 
-minhaFuncao();
+// minhaFuncao; // node: nada
 
-minhaFuncao(2, 3);
+// console.log(minhaFuncao)
+// Nodejs: [Function: minhaFuncao]
+
+// minhaFuncao();
+
+// minhaFuncao(2, 3);
 
 //* Parâmetros também possuem "function scope".
 // console.log(c); // não há "c" no escopo global
 // Uncaught ReferenceError: c is not defined
 //* ☝ a mesma coisa para as variáveis a e b
+
+/*
+* Exemplo 3: scope chain
+------------------------------------------------------*/
+
+// const c = 2;
+// ignorada por já existir uma "c" num escopo anterior
+
+// function soma(a, b) {
+
+	// const c = 3;
+
+	// function mult(a, b) {
+		// "a" e "b" são nomes INTERNOS de mult!
+		// return a * b * c;
+	// }
+
+	// console.log(mult(a, b));
+	// "a" e "b" são os parâmetros da invocação de "soma"
+
+	// return a + b;
+// }
+
+// const resultado = soma(10, 5);
+
+// console.log(resultado);
+
+/*
+* Exemplo 4: variável não declarada
+------------------------------------------------------*/
+
+// a = 10;
+/* Será criada no escopo global */
+
+
+// console.log(a);
+// console.log(global.a); // node
+// console.log(window.a); // browser
+
+// const minhaFuncao = function(){
+
+	// b = 5;
+	// ^-- a atribuição assim cria, IMPLICITAMENTE, uma variável b global.
+
+	// console.log(b);
+// }
+
+// minhaFuncao(); // 5
+
+// console.log(b);
+// Uncaught ReferenceError: b is not defined
+// ^-- antes da expressão função acima
+
+/*
+* exemplo 5: strict mode
+------------------------------------------------------*/
+"use strict";
+// "use strict": string notation. Expressão
+// "use strict;": Expression Statement
+
+//! Pode ser usada em escopo de função!
+
+// a = 10;
+// Uncaught ReferenceError: a is not defined
+// ^-- erro imediato pelo strict mode
+
+function minhaFuncao() {
+	b = 5;
+	// Uncaught ReferenceError: b is not defined
+}
+
+minhaFuncao();
