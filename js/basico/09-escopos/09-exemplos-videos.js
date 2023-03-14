@@ -121,7 +121,6 @@ são globais!
 // a = 10;
 /* Será criada no escopo global */
 
-
 // console.log(a);
 // console.log(global.a); // node
 // console.log(window.a); // browser
@@ -138,7 +137,7 @@ são globais!
 
 // console.log(b);
 // Uncaught ReferenceError: b is not defined
-// ^-- antes da expressão função acima
+// ^-- linha escrita ANTES da expressão função acima
 
 /*
 * exemplo 5: strict mode
