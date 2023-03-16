@@ -105,4 +105,4 @@ console.log("Números rejeitados: "
 	+ numerosRejeitados.length === 0
 		? "nenhum"
 		: numerosRejeitados
-	);
+);
