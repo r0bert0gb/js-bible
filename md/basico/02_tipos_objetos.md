@@ -31,6 +31,6 @@ variavel.propriedade = 10;
 // bracket notation
 variavel["propriedade"] = 10;
 
-// com brackets, é possível usar uma variável como nome de propriedade
+// com brackets, é possível usar uma variável(ou outra expressão válida) como nome de propriedade
 variavel[varNomePropriedade] = "Uma string qualquer";
 ```

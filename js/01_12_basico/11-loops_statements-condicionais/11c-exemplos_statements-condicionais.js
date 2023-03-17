@@ -26,7 +26,6 @@
 // }
 
 //ANCHOR - Operador Ternário
-
 let i = 10;
 let j;
 
