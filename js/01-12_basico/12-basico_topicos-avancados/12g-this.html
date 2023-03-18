@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>This</title>
+</head>
+
+<body>
+	<!-- * Uso de botões para exemplos com THIS -->
+	<button onclick="console.log(this);">
+		Botão log
+	</button>
+	<!-- O que isso vai fazer?
+		Eu: definição do objeto window
+		☝ errado! apareceu a descrição do próprio elemento HTML.
+	-->
+	<button onclick="console.dir(this);">
+		Botão dir
+	</button>
+
+	<button onclick="console.log(this.textContent);">
+		Texto do botão
+	</button><br>
+
+	<!--* Desafio:
+	1. Criar um campo de formulário.
+	2. evento "onchange" para logar o que foi digitado.
+	** onchange -> clicar fora do campo
+	-->
+
+	<input type="text" onchange="printarMudanca()" /><br>
+	<input type="text" onchange="console.log(this.textContent);" /><br>
+
+	<!-- "value" e "textContent" são coisas DIFERENTES! -->
+	<input type="text" onchange="console.log(this.value);" /><br>
+
+
+	<input type="text" onchange="console.dir(this);" /><br>
+	<input type="text" onchange="console.dir(this.textContent);" />
+
+	<script>
+		function printarMudanca() {
+			console.log(this.textContent);
+		}
+	</script>
+
+</body>
+
+</html>

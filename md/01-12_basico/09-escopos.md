@@ -115,7 +115,7 @@ A variável *a*, segundo o *scope chain*:
 
 ### Strict Mode
 
-Modo de operação do *JavaScript engine*. Previne o uso de variáveis **não declaradas**. Introduzido no Ecma Script 5(2009). Previne erros humanos de nomes de variáveis escritos errados de forma errada.
+Modo de operação do *JavaScript engine*. Previne o uso de variáveis **não declaradas**. Introduzido no Ecma Script 5(2009). Previne erros humanos de nomes de variáveis escritos de forma errada.
 
 Ativando o strict mode: `"use strict";`. É uma string! Mesma regra para outras strings: double ou single quotes.
 
