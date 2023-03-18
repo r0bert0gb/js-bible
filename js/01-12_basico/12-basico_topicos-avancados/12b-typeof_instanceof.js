@@ -92,6 +92,9 @@ const myArray = [1, 2];
 if (myArray instanceof Array) {
 
 	console.log("myArray é instância de Array!");
+
 } else {
+
 	console.log("myArray NÃO é instância de Array!");
+
 }

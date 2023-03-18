@@ -17,13 +17,13 @@ if (meuArray3 === meuArray4) {
     console.log("Iguais");
 } else {
     console.log("Diferentes");
-} // diferentes
+} // DIFERENTES
 // Objetos diferentes
 if (meuArray3.values === meuArray4.values) {
   console.log("Iguais");
 } else {
   console.log("Diferentes");
-} // iguais
+} // IGUAIS
   // apenas o conteúdo pode ser igual!
 
 //* Instanciando uma string
@@ -31,6 +31,9 @@ if (meuArray3.values === meuArray4.values) {
 // Sintaxes NÃO equivalentes!
 const minhaString1 = "abc";
 const minhaString2 = new String("abc");
+
+console.log("typeof minhaString1: " + typeof minhaString1);
+console.log("typeof minhaString2: " + typeof minhaString2);
 
 console.log(minhaString1 instanceof String); // false
 console.log(minhaString2 instanceof String); // true
@@ -42,5 +45,4 @@ console.log(minhaString2 instanceof Object); // true
 const minhaString = new String("String qualquer");
 
 // chamando o método
-
 console.log(minhaString.toUpperCase());

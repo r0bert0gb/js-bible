@@ -74,12 +74,12 @@
  * 4 - const
 */
 
-// const meuBooleano = true;
+const meuBooleano = true;
 
-// console.log(meuBooleano);
+console.log(meuBooleano);
 
 // erro: assignment para constante
-// meuBooleano = false;
+meuBooleano = false;
 
 // erro: "Já foi declarada"
 /* O log acima não é executado. O erro foi avaliado PRIMEIRO */
@@ -95,7 +95,7 @@ Nota: "meuObjeto" não pode ser reassinalada.
 */
 // const meuObjeto = {};
 
-// console.log(meuObjeto);
+console.log(meuObjeto);
 
 /* Desafio 2:
 
@@ -108,12 +108,12 @@ declarar:
 	- depois, assinalar um objeto com 3 pares nome-valor
 */
 
-// console.log(meuObjeto);
+console.log(meuObjeto);
 /*
  {a: 10, b: true, prototype: Object}
 */
 
-// console.log(outroObjeto);
+console.log(outroObjeto);
 /*
  {
 	novoA: 20,
@@ -123,25 +123,25 @@ declarar:
  }
 */
 
-// let x = 10;
+let x = 10;
 
-// const y = true;
+const y = true;
 
-// const meuObjeto = {
-// 	a: x,
-// 	b: y
-// };
+const meuObjeto = {
+	a: x,
+	b: y
+};
 
-// console.log(meuObjeto);
+console.log(meuObjeto);
 
-// x = 20;
+x = 20;
 
-// let outroObjeto;
+let outroObjeto;
 
-// outroObjeto = {
-// 	novoA: x,
-// 	b: y,
-// 	c: meuObjeto
-// };
+outroObjeto = {
+	novoA: x,
+	b: y,
+	c: meuObjeto
+};
 
-// console.log(outroObjeto);
+console.log(outroObjeto);
