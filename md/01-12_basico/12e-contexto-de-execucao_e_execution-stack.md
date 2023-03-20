@@ -1,9 +1,9 @@
 # Contexto de Execução e Pilha de Contexto de Execução
 
 - [Contexto de Execução e Pilha de Contexto de Execução](#contexto-de-execução-e-pilha-de-contexto-de-execução)
-  - [Exemplo 1](#exemplo-1)
-  - [Exemplo 2](#exemplo-2)
-  - [Desafio](#desafio)
+	- [Exemplo 1](#exemplo-1)
+	- [Exemplo 2](#exemplo-2)
+	- [Desafio](#desafio)
 
 Contexto de execução **global** e **function**.
 
@@ -73,13 +73,9 @@ function primeiroNivel() {
 
 		terceiroNivel();
 	}
+
 	segundoNivel();
 }
 
 primeiroNivel();
 ```
-
-
-<!-- ## Global Execution Context
-
-## Function Execution Context -->

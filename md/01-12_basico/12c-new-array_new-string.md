@@ -7,12 +7,12 @@
     - [Typeof](#typeof)
     - [Instance Of](#instance-of)
     - [Usando um método de um Objeto String](#usando-um-método-de-um-objeto-string)
-      - [Importante](#importante)
+      - [**IMPORTANTE**](#importante)
 
 Objetos, variáveis, funções. São tudo isso!
 Chamadas, também, de funções construtoras.
 
-Objetos / funções construtoras / atributos de *window*/*global*:
+Objetos / funções construtoras / propriedades de *window*/*global*:
 
 - Array
 - Boolean
@@ -77,9 +77,11 @@ const minhaString2 = new String("abc");
 ### Typeof
 
 ```js
-typeof minhaString1;
-typeof minhaString2;
+typeof minhaString1; // string
+typeof minhaString2; // object
 ```
+
+![](../prints/2023-03-20-16-13-11.png)
 
 *minhaString2* é um objeto!
 
@@ -108,7 +110,7 @@ const minhaString = new String("String qualquer");
 minhaString.toUpperCase();
 ```
 
-#### Importante
+#### **IMPORTANTE**
 
 String não é um objeto e a chamada de método ***FUNCIONA***!
 

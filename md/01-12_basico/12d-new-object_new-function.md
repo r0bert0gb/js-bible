@@ -14,16 +14,16 @@ const minhaFuncao2 = new Function();
 
 // 2
 typeof meuObjeto1; // object
-typeof minhaFuncao1; // function
-
 typeof meuObjeto2; // object
+
+typeof minhaFuncao1; // function
 typeof minhaFuncao2; // function
 
 // 3
 meuObjeto1 instanceof Object; // true
-minhaFuncao1 instanceof Function; // true
-
 meuObjeto2 instanceof Object; // true
+
+minhaFuncao1 instanceof Function; // true
 minhaFuncao2 instanceof Function; // true
 ```
 
