@@ -50,18 +50,18 @@ o objeto global "window"
 // provando que this, nesse contexto, = window
 console.log(this === window);
 
-function addCustomGlobalMethod(objetoGlobal) {
+function adicionarMetodoGlobalCustomizado(objetoGlobal) {
 
-	objetoGlobal.customMethod = function() {
+	objetoGlobal.metodoCustomizado = function() {
 		console.log("Saudações do método customizado");
 	}
 }
 
-addCustomGlobalMethod(this);
+adicionarMetodoGlobalCustomizado(this);
 
 // as 3 chamadas de função são equivalentes:
-window.customMethod();
+window.metodoCustomizado();
 
-this.customMethod();
+this.metodoCustomizado();
 
-customMethod();
+metodoCustomizado();
