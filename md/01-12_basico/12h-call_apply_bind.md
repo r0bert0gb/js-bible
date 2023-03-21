@@ -1,10 +1,10 @@
 # Métodos de funções "call", "apply" e "bind"
 
 - [Métodos de funções "call", "apply" e "bind"](#métodos-de-funções-call-apply-e-bind)
-  - [Call helper method](#call-helper-method)
-  - [Apply helper method](#apply-helper-method)
-  - [Bind helper method](#bind-helper-method)
-    - [Desafio](#desafio)
+	- [Call helper method](#call-helper-method)
+	- [Apply helper method](#apply-helper-method)
+	- [Bind helper method](#bind-helper-method)
+		- [Desafio](#desafio)
 
 
 Em JS, funções são objetos instanciados de *Function*. Significa que há
@@ -51,7 +51,7 @@ function minhaFuncao(a, b) {
 	console.log(this);
 } // Window (sem "strict mode")
 
-minhaFuncao.call(meuObjeto, 10, 3); // {a: 10, b: null}
+minhaFuncao.call(meuObjeto, 10, 3); // 13, {a: 10, b: null}
 // "this" é "meuObjeto"
 ```
 
