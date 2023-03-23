@@ -60,7 +60,6 @@ Outra forma:
 - referenciar **window** com uso do *this*
 
 ```js
-//* OPÇÃO 2:
 (function () {
 	this.customMethod = function() {
 		console.log("Saudações do método customizado");

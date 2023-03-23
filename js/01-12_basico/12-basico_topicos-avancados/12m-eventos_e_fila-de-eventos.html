@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eventos e Fila de eventos</title>
+</head>
+
+<body>
+
+	<button onclick="console.log('O botão foi clicado');">
+		Me clique!!
+	</button>
+
+	<!--* O botão só vai printar depois do loop no JS terminar! -->
+	<script>
+		function funcaoEspera(tempoEmMs) {
+
+			const tempoFuturo = Date.now() + tempoEmMs;
+
+			while (tempoFuturo > Date.now()) { }
+
+			console.log("now: " + Date.now() + " tempoFuturo: " + tempoFuturo);
+		}
+
+		funcaoEspera(3000);
+		console.log("Terminou");
+	</script>
+
+</body>
+
+</html>
