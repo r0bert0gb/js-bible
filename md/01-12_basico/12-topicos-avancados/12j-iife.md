@@ -1,7 +1,7 @@
 # Immediately Invoked Function Expression
 
 Conteúdo já citado:
-[Function Expressions](../../js/01-12_basico/02-funcoes/05d_function_expressions.js)
+[Function Expressions](../../../js/01-12_basico/02-funcoes/05d_function_expressions.js)
 
 Funções:
 

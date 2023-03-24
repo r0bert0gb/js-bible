@@ -12,7 +12,7 @@ métodos disponíveis provindos do *prototype Function*.
 
 O prototype seria equivalente, eu acho, aos métodos provindos de **Object** no Java
 
-![](../prints/2023-03-20-16-57-04.png)
+![](../../prints/2023-03-20-16-57-04.png)
 
 ## Call helper method
 

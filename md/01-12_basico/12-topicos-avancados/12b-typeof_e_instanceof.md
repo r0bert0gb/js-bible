@@ -100,7 +100,7 @@ São:
 
 São *Funções construtoras*: usadas para instanciar novos objetos de seu determinado tipo.
 
-![](../prints/2023-03-17-10-42-58.png)
+![](../../prints/2023-03-17-10-42-58.png)
 
 >Object concede herança a todos os outros tipos. Mesma ideia por trás do *Java*.
 

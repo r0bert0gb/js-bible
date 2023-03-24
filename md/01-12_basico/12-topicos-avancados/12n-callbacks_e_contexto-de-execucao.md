@@ -90,7 +90,7 @@ console.log("Último statement no contexto de execução global");
 
 Usando o desafio acima e adicionando cliques no botão. A *fila de eventos* agora está com cliques e a *callback function*.
 
-![](../prints/2023-03-23-19-49-54.png)
+![](../../prints/2023-03-23-19-49-54.png)
 
 Mesmo após 2 segundos, os cliques são considerados primeiro. A *fila de eventos* priorizou os cliques por uma questão de **UX**(*user experience*).
 

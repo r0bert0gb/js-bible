@@ -21,11 +21,11 @@ Objetos / funções construtoras / propriedades de *window*/*global*:
 
 Se são funções como atributo 👉 métodos.
 
-![](../prints/2023-03-17-11-45-09.png)
+![](../../prints/2023-03-17-11-45-09.png)
 
 Se o escopo é global, estão no objeto *window*. No *Nodejs*, o objeto *global* é o equivalente ao *window*.
 
-![](../prints/2023-03-17-11-47-33.png)
+![](../../prints/2023-03-17-11-47-33.png)
 
 ## Instanciando um Array
 
