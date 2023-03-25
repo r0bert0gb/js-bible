@@ -72,8 +72,6 @@ minhaFuncao();
 
 ---
 
-
-
 ## Funções puras e impuras
 
 ### Puras
@@ -89,8 +87,6 @@ Inverso de pura. Os exemplos acima são *funções impuras*.
 [Topo](#escopos-em-js)
 
 ---
-
-
 
 ## Variáveis não declaradas e Strict Mode
 
