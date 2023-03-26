@@ -11,12 +11,9 @@ In the "onclick" event handler:
 	3. Log to the console message with the name	of the clicked menu item
  */
 
-	//* encontrar os elementos que possuam a classe "nav-link"
-
 	const itensMenu = document.getElementsByClassName("nav-link");
 	const LENGHT = itensMenu.length;
 
-	//* adicionar o evento "onclick" em todos elementos de classe "nav-link"
 	for (let itemMenu of itensMenu) {
 
 		itemMenu.onclick = function() {

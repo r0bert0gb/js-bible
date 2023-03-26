@@ -47,9 +47,12 @@ Tipos de escopo:
 
 ```js
 if (true) {
-  // escopo de bloco
+
+  var b // global
+
 } else {
-  // escopo de bloco
+
+  var b // global
 }
 ```
 
