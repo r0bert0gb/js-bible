@@ -1,5 +1,9 @@
-function funcao(a) {
-	console.log(a);
-}
 
-funcao();
+
+
+let a;
+a = 10;
+
+console.log(a); // 10
+
+console.log(window.a); // 10
