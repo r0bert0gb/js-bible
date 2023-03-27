@@ -1,7 +1,14 @@
-if (true) {
-	var b = true;
-	let c = false;
+function geraClosure() {
+	var variavelInterna = 0;
+
+	function fnClosure(valor) {
+
+		console.dir(fnClosure);
+
+		return variavelInterna + valor;
+	}
+
+	return fnClosure;
 }
 
-console.log(b);
-console.log(c);
+var testaClosure = geraClosure();

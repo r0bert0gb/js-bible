@@ -11,6 +11,7 @@
       - [Let Compilation phase](#let-compilation-phase)
       - [Let Execution phase](#let-execution-phase)
       - [Mais uma diferença com VAR](#mais-uma-diferença-com-var)
+    - [Ciclo de vida de const](#ciclo-de-vida-de-const)
 
 
 ## Fases do JS Engine
@@ -136,3 +137,11 @@ console.log(window.a); // undefined
 let não torna "a" como propriedade do objeto global *window*!
 
 [Topo](#fases-do-engine-js-e-variáveis)
+
+---
+
+### Ciclo de vida de const
+
+![](../prints/2023-03-27-08-28-15.png)
+
+Quase igual à let. A diferença é na etapa de atribuição, que é feita logo após a inicialização.
