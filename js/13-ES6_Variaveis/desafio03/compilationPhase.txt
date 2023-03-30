@@ -1,0 +1,15 @@
+Fase compilação:
+
+Scopos:
+Global {
+	(X) b: declarada, não inicializada (TDZ)
+
+	(X) a: declarada e inicializada com undefined
+
+	(X) c: declarada e inicializada com undefined
+}
+
+Bloco {
+
+	(X) c: declarada. Não inicializada.
+}

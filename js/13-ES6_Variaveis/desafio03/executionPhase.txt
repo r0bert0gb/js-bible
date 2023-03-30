@@ -1,0 +1,14 @@
+Fase de execução
+
+1:
+	b: inicializada e atribuída com 5
+3:
+	a: atribuído o valor b(5)
+6:
+	c: inicializada e atribuída com 5
+9:
+	"a" atribuiída com o valor 1
+11:
+	nada.
+13:
+	saída do log: 1, 5, undefined
