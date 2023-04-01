@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desafio_2-1_resposta</title>
+	<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="../estilo-padrao.css">
+</head>
+
+<body>
+
+	<!-- Como ele fez? -->
+	<script>
+		// MANEIRA 1
+		const criarBotao1 = () => {
+			const btn1 = document.createElement("button");
+
+			let qtdeClickes = 1;
+
+			btn1.innerHTML = "Aperte!";
+
+			btn1.onclick = function () {
+				btn1.innerHTML = "Botão foi apertado " + qtdeClickes + "x vezes"
+				console.log("Botão apertado!");
+
+				qtdeClickes++;
+			}
+
+			document.body.appendChild(btn1);
+		}
+		criarBotao1();
+
+
+		// MANEIRA 2
+
+		const criarBotao2 = () => {
+			const btn2 = document.createElement("button");
+
+			let qtdeClickes = 1;
+
+			btn2.innerHTML = "Botão 2";
+
+			// Usando expressão função
+			// btn2.addEventListener("click", function () {
+			// 	console.log("Botão 2 clicado!");
+			// 	btn2.innerHTML = "Botão clicado " + qtdeClickes + "x vezes";
+			// 	this.innerHTML = "Botão clicado " + qtdeClickes + "x vezes";
+			// 	console.log(this); // botão
+			// 	qtdeClickes++;
+			// });
+
+			// Usando Arrow Functions
+			btn2.addEventListener("click", () => {
+				console.log("Botão 2 clicado!");
+				// btn2.innerHTML = "Botão clicado " + qtdeClickes + "x vezes";
+				this.innerHTML = "Botão clicado " + qtdeClickes + "x vezes";
+				// console.log(this); // window
+
+				qtdeClickes++;
+
+			});
+
+			document.body.appendChild(btn2);
+		};
+		criarBotao2();
+	</script>
+
+
+</body>
+
+</html>
