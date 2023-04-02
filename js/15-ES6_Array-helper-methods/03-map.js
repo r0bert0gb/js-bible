@@ -25,12 +25,12 @@ const meusNumeros = [3, 5, 7, 2];
 // const meusNumerosQuadrados = meusNumeros.map(numerosQuadrados);
 
 //* Usando direto como CALLBACK FUNCTION
-// const meusNumerosQuadrados = meusNumeros.map(Math.pow(elemento, 2));
+const meusNumerosQuadrados = meusNumeros.map(Math.pow(elemento, 2));
 
 /*
 * O que acontece aqui?
 Lembrar que map recebe 3 argumentos: valor, índice e array */
-const meusNumerosQuadrados2 = meusNumeros.map(Math.pow);
+// const meusNumerosQuadrados2 = meusNumeros.map(Math.pow);
 
 console.log(meusNumeros);
-console.log(meusNumerosQuadrados2);
+console.log(meusNumerosQuadrados);
