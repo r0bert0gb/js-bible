@@ -2,12 +2,12 @@
 const meusNumeros = [10, 45, 56, 100, 5];
 
 // * Filter para divisíveis por 5
-const divisiveis5 = meusNumeros.filter(
+const divisiveisPor5 = meusNumeros.filter(
 	(numero) => numero % 5 === 0 ? true : false
 );
 
 // retorno implícito
-const divisiveis5b = meusNumeros.filter(
+const divisiveisPor5b = meusNumeros.filter(
 	(numero) => numero % 5 === 0
 );
 
@@ -23,7 +23,7 @@ const maioresQue10b = meusNumeros.filter(
 	(numero) => numero > 10
 );
 
-console.log(divisiveis5);
-console.log(divisiveis5b);
+console.log(divisiveisPor5);
+console.log(divisiveisPor5b);
 console.log(maioresQue10);
 console.log(maioresQue10b);

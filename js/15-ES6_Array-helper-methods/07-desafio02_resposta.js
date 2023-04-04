@@ -15,14 +15,30 @@ const funcao = (postId, arrayPosts) =>
 // * Deve sair aqui
 console.log(funcao(1355, posts));
 
+// Não funciona. "undefined"
 function funcao2(postId, arrayPosts) {
-	arrayPosts.find((elemento) => elemento.postId === postId);
+	arrayPosts.find(function (elemento) {
+
+		return elemento.postId === postId;
+	})
 }
 
 console.log(funcao2(1355, posts));
 
-const funcao3 = function (postId, arrayPosts) {
-	arrayPosts.find((elemento) => elemento.postId === postId);
-}
+//--------------------------------
 
-console.log(funcao3(1355, posts));
+// Não funciona. "undefined"
+// const funcao3 = function (postId, arrayPosts) {
+	// 	arrayPosts.find((elemento) => elemento.postId === postId);
+	// }
+
+	// console.log(funcao3(1355, posts));
+
+//--------------------------------
+
+// Não funciona. "undefined"
+// const funcao4 = function(postId, array) {
+// 	array.find((elemento) => elemento.postId === postId)
+// }
+
+// console.log(funcao4(1355, posts));
