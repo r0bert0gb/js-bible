@@ -13,20 +13,22 @@ const arrayCheck = (inputArray) => {
 	}
 
 	// 2
-	const isMaiorQueOAnterior = (elemento, indice, array) =>
-		indice > 0
+	const isMaiorQueOAnterior = (elemento, indice, array) => {
+		return indice > 0
 			? elemento >= array[indice - 1]
 			: true;
+	}
 
 	if (inputArray.every(isMaiorQueOAnterior)) {
 		return "Ordem crescente";
 	}
 
 	// 3
-	const isMenorQueOAnterior = (elemento, indice, array) =>
-		indice > 0
+	const isMenorQueOAnterior = (elemento, indice, array) => {
+		return indice > 0
 			? elemento <= array[indice - 1]
 			: true;
+	}
 
 
 	if (inputArray.every(isMenorQueOAnterior)){
