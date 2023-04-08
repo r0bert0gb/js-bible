@@ -66,10 +66,44 @@ const persons = [
 This function "sortPersonsByFriendsQty" should sort input array of persons by friendsQty of each person in ascending order and return resulting array.
 */
 
-sortPersonsByFriendsQty(persons);
-/* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js?
+const ordenarPessoasPorQtdeAmigos = (arrayPessoas) => {
 
-Is this sorting stable or not?
+	let qtdeInteracoes = 0;
+
+	arrayPessoas.sort((pessoaA, pessoaB) => {
+
+		qtdeInteracoes++;
+
+		console.log(
+			pessoaA.name + "(" + pessoaA.friendsQty + ")", pessoaB.name + "(" +pessoaB.friendsQty + ")"
+		);
+
+		return pessoaA.friendsQty - pessoaB.friendsQty;
+	});
+
+	console.log("Quantidade de interações: " + qtdeInteracoes);
+	return arrayPessoas;
+}
+
+ordenarPessoasPorQtdeAmigos(persons);
+
+/*
+* Which sorting algorithm is used here in Google Chrome, Firefox, Node.js?
+
+	1 - Quicksort para o V8
+	2 - Insertion sort para o Firefox
+	3 - Merge Sort
+
+31 interações no Firefox, 27 no V8 e 29 no Safari.
+
+
+* Is this sorting stable or not?
+	Instável no Chrome! A ordem dos índices NÃO foi mantida!
+
+	Estável no Firefox. A ordem dos índice FOI mantida!
+
+	Estável no Safari. A ordem dos índice FOI mantida!
+
 */
 
 console.log(persons);

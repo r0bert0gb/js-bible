@@ -1,4 +1,4 @@
-// * Sort
+// *LINK Sort helper method
 
 const numeros = [10, 5, 79, 27, 50, 14, 27, 5, 11];
 
