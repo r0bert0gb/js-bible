@@ -1,15 +1,15 @@
-const meuArray = [];
 
-meuArray.push(1);
-meuArray.push(2);
+// Callback functions
 
-meuArray[10] = "10";
+function perguntar(pergunta, sim, nao) {
 
-console.log(meuArray);
+	if (confirmar(pergunta)) {
+		sim();
+	} else {
+		nao();
+	}
+}
 
-// for(let i = 0; i < meuArray.length; i++) {
-
-// 	console.log("Passei no índice "+ i +": "+ meuArray[i]);
-// }
-
-meuArray.forEach((elemento, indice) => console.log(indice +": "+ elemento));
+function showOk() {
+	console.log("Seu ganancioso!");
+}
