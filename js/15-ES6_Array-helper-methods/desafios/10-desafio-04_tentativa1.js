@@ -11,24 +11,10 @@ If two arrays are equal (have same quantity of the elements and all elements mat
 
 Otherwise return "false". */
 
+//LINK - Refazer
+
 const c = [2, 1, 3];
 const d = [1, 2, 3, 4];
-
-const isArraysEqual = (arrayOne, arrayTwo) => {
-
-	if (arrayOne.length !== arrayTwo.length) {
-		return false;
-	}
-
-	const compararIndices = (elemento, indice) => elemento === arrayTwo[indice];
-
-	if (arrayOne.every(compararIndices)) {
-		return true;
-	}
-	return false;
-}
-
-console.log("-------------------");
 
 console.log(isArraysEqual(a, b)); // true
 console.log(isArraysEqual(a, c)); // false

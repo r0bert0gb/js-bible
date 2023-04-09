@@ -3,43 +3,7 @@ const b = [4, 10, 14, 25, 25, 50];
 const c = [150, 132, 80, 40];
 const d = [15, 26, 10, 23, 85];
 
-const arrayCheck = (inputArray) => {
-
-	// * Se todos são números
-	if (inputArray.some((elemento) => typeof elemento !== "number")) {
-		return "Alguns elementos não são números!";
-	}
-
-	// * Se estão em ordem crescente
-	const isMaiorQueOAnterior = (elemento, indice, arrayAlvo) => {
-
-		if (indice > 0) {
-			return elemento > arrayAlvo[indice - 1];
-		}
-		return true;
-	}
-
-	if (inputArray.every(isMaiorQueOAnterior)) {
-		return "O array está em ordem crescente!";
-	}
-
-	// * Se estão em ordem decrescente
-	const isMenorQueOAnterior = (elemento, indice, arrayAlvo) => {
-		if (indice > 0) {
-			return elemento < arrayAlvo[indice - 1];
-		}
-		return true;
-	}
-
-	if (inputArray.every(isMenorQueOAnterior)) {
-		return "O array está em ordem decrescente!";
-	}
-};
-
-// console.log(arrayCheck(a));
-console.log(arrayCheck(b));
-// console.log(arrayCheck(c));
-// console.log(arrayCheck(d));
+//LINK - Refazer
 
 /*
 Create a function "arrayCheck" with one parameter - "inputArray".

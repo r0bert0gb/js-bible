@@ -22,21 +22,6 @@ const minimalComentsQty = 10;
 
   This function "popularPostsIds" should return an array of postIds of posts that have quantity of "comments" at least equal to "minimalComentsQty"
   */
-
-const popularPostsIds = (arrayPosts, qtdeMinimaComentarios) =>
-	arrayPosts.reduce(
-		(arrayResultante, post) => {
-
-			if (post.comments >= qtdeMinimaComentarios) {
-
-				arrayResultante.push(post.postId);
-			}
-
-			return arrayResultante;
-		}
-		, []
-	);
-
-
+//LINK - Refazer
 
 console.log(popularPostsIds(posts, minimalComentsQty)); // [3421, 8135]

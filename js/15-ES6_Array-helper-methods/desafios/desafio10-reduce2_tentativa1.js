@@ -25,15 +25,7 @@ const products = [
 	}
 ];
 
-const quantityByCategories = (arrayProdutos) =>
-
-	arrayProdutos.reduce(
-
-		(objetoCategorias, elemento) => {
-
-			return objetoCategorias += elemento;
-		}, {}
-	);
+//LINK - Refazer
 
 
 /* Create a function "quantityByCategories" with one parameter "products".

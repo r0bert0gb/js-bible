@@ -31,26 +31,9 @@ const products = [
 
 	Merge Sort no Safari
 */
-
-let qtdeInteracoes = 0;
-
-const sortProductsByPrice = (arrayProdutos) => {
-
-	qtdeInteracoes++;
-
-	return arrayProdutos.sort(
-		(preco1, preco2) => {
-
-			console.log("'" + preco1.title + "'", "'" + preco2.title + "'");
-			return preco1.price - preco2.price;
-		}
-	);
-};
+//LINK - Refazer
 
 sortProductsByPrice(products);
-
-console.log(products);
-console.log("Quantidade de interações: " +  qtdeInteracoes);
 
 /* Create a function "sortProductsByPrice" with one parameter "products".
 
@@ -63,7 +46,7 @@ This function "sortProductsByPrice" should sort input array of products by price
 Is this sorting stable or not?
 */
 
-// console.log(products);
+console.log(products);
 /* Array of products sorted by price in ascending order.
 Why original "products" array was mutated?
 */
