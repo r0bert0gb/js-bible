@@ -57,7 +57,6 @@ function primeiroNivel() {
 		function terceiroNivel() {
 			console.log("Quarto nível na pilha");
 		}
-
 		terceiroNivel();
 	}
 	segundoNivel();

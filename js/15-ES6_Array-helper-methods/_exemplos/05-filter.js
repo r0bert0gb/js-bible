@@ -23,7 +23,8 @@ const maioresQue10b = meusNumeros.filter(
 	(numero) => numero > 10
 );
 
-console.log(divisiveisPor5);
-console.log(divisiveisPor5b);
-console.log(maioresQue10);
-console.log(maioresQue10b);
+console.log("Array inicial: " + meusNumeros);
+console.log("Divisíveis por 5: " + divisiveisPor5);
+console.log("Divisíveis por 5b: " + divisiveisPor5b);
+console.log("Maiores que 10: " + maioresQue10);
+console.log("Maiores que 10b: " + maioresQue10b);
