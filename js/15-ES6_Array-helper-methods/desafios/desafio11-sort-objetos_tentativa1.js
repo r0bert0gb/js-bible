@@ -31,7 +31,9 @@ const products = [
 
 	Merge Sort no Safari
 */
-//LINK - Refazer
+
+const sortProductsByPrice = (arrayProdutos) =>
+	arrayProdutos.sort((produto1, produto2) => produto1.price - produto2.price);
 
 sortProductsByPrice(products);
 

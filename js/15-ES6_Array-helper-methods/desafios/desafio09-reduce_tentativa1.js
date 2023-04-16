@@ -18,10 +18,30 @@ const posts = [
 
 const minimalComentsQty = 10;
 
-  /* Create a function "popularPostsIds" with two parameters "posts" and "minimalComentsQty".
+/* Create a function "popularPostsIds" with two parameters "posts" and "minimalComentsQty".
 
-  This function "popularPostsIds" should return an array of postIds of posts that have quantity of "comments" at least equal to "minimalComentsQty"
-  */
-//LINK - Refazer
+This function "popularPostsIds" should return an array of postIds of posts that have quantity of "comments" at least equal to "minimalComentsQty"
+*/
+
+
+// const popularPostsIds = (arrayPosts, qtdeComentarios) => {
+
+// 	return arrayPosts.reduce((arrayRetorno, post) => {
+
+// 		if (post.comments >= qtdeComentarios) arrayRetorno.push(post.postId);
+
+// 		return arrayRetorno;
+// 	}, []);
+// };
+
+function popularPostsIds(arrayPosts, qtdeComentarios) {
+
+	return arrayPosts.reduce(function(arrayRetorno, post) {
+
+		if (post.comments >= qtdeComentarios) arrayRetorno.push(post.postId);
+
+		return arrayRetorno;
+	}, []);
+}
 
 console.log(popularPostsIds(posts, minimalComentsQty)); // [3421, 8135]

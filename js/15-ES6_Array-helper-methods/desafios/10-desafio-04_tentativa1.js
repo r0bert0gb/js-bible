@@ -1,7 +1,7 @@
 const a = [1, 2, 3];
 const b = [1, 2, 3];
 
-console.log(a === b); // false
+// console.log(a === b); // false
 // 1: Por que "a" e "b" são diferentes?
 //* Porque array é do tipo referência. Mesmos valores e número de elementos, mas arrays diferentes.
 
@@ -11,10 +11,17 @@ If two arrays are equal (have same quantity of the elements and all elements mat
 
 Otherwise return "false". */
 
-//LINK - Refazer
-
 const c = [2, 1, 3];
 const d = [1, 2, 3, 4];
+
+const isArraysEqual = (array1, array2) => {
+
+	if (array1.length !== array2.length) return false;
+
+	return array1.every(
+		(elemento, indice) => elemento === array2[indice]
+	);
+};
 
 console.log(isArraysEqual(a, b)); // true
 console.log(isArraysEqual(a, c)); // false

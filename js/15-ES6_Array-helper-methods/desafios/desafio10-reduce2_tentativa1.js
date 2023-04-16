@@ -25,7 +25,21 @@ const products = [
 	}
 ];
 
-//LINK - Refazer
+const quantityByCategories = (arrayProdutos) => arrayProdutos.reduce(
+	(objetoQuantidade, produto) => {
+
+		objetoQuantidade[produto.category] =
+			(objetoQuantidade.category || 0) + produto.quantity;
+		/*
+			Se não existir, é inicializado com zero + quantidade.
+			Se existir, incrementa com quantidade. */
+
+
+
+
+		return objetoQuantidade;
+	}, {}
+);
 
 
 /* Create a function "quantityByCategories" with one parameter "products".

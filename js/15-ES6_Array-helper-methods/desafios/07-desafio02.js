@@ -4,6 +4,13 @@ const posts = [
 	{ postId: 6134, commentsQuantity: 2 }
 ];
 
-/* Crie uma função que terá dois parâmetros. postId e posts.
-Retorna o objeto com o postId que casou */
-//LINK - Refazer
+/*
+Create a function "findSinglePost" that will have two parameters - "postId" and "posts" and will return object with matched "postId".
+If post wasn't found - return "undefined"
+*/
+
+const findSinglePost = (postId, arrayPosts) =>
+	arrayPosts.find((elemento) => elemento.postId === postId);
+
+console.log(findSinglePost(6134, posts)); // objeto
+console.log(findSinglePost(4511, posts)); // undefined

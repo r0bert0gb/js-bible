@@ -26,15 +26,14 @@ const products = [
 ];
 
 const quantityByCategories = (arrayProdutos) =>
-
 	arrayProdutos.reduce(
 		(quantidades, produto) => {
 
-			console.log("quantidades: " + JSON.stringify(quantidades));
+			// console.log("quantidades: " + JSON.stringify(quantidades));
 
-			console.log("produto: " + JSON.stringify(produto));
+			// console.log("produto: " + JSON.stringify(produto));
 
-			console.log("-----------------------");
+			// console.log("-----------------------");
 
 			quantidades[produto.category] =
 				(quantidades[produto.category] || 0) + produto.quantity;

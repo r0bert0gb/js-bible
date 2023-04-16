@@ -3,8 +3,6 @@ const b = [4, 10, 14, 25, 25, 50];
 const c = [150, 132, 80, 40];
 const d = [15, 26, 10, 23, 85];
 
-//LINK - Refazer
-
 /*
 Create a function "arrayCheck" with one parameter - "inputArray".
 
@@ -17,7 +15,41 @@ If numbers in the array are sorted in descending order - return "Array is sorted
 If array is not sorted - return "Array is not sorted"
 */
 
-// console.log(arrayCheck(a)); // Some elements are not numbers
-// console.log(arrayCheck(b)); // Array is sorted is ascending order
-// console.log(arrayCheck(c)); // Array is sorted is descending order
-// console.log(arrayCheck(d)); // Array is not sorted
+const arrayCheck = (inputArray) => {
+
+	// 1
+	const isNotNumero = (elemento) => typeof elemento !== "number";
+
+	if (inputArray.some(isNotNumero)) {
+
+		return "Alguns elementos não são números!"
+	}
+
+	// 2
+	const isNumeroMaior = (elemento, indice, array) =>
+		indice > 0
+			? elemento >= array[indice - 1]
+			: true;
+
+	if (inputArray.every(isNumeroMaior)) {
+		return "Array ordenado de forma crescente!";
+	}
+
+	// 3
+	const isNumeroMenor = (elemento, indice, array) =>
+		indice > 0
+			? elemento <= array[indice - 1]
+			: true;
+
+	if (inputArray.every(isNumeroMenor)) {
+		return "Array ordenado de forma decrescente!";
+	}
+
+	// 4
+	return "Array não ordenado!";
+}
+
+console.log(arrayCheck(a)); // Some elements are not numbers
+console.log(arrayCheck(b)); // Array is sorted is ascending order
+console.log(arrayCheck(c)); // Array is sorted is descending order
+console.log(arrayCheck(d)); // Array is not sorted
