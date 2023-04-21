@@ -32,23 +32,15 @@ function taggedTemplate(arrayDeStrings) {
 
 	const resultadosExpressoes = Array.from(arguments).slice(1);
 
-
 	return arrayDeStrings.reduce((stringConcatenada, stringAtual, indice) => {
 
-		// return stringConcatenada + stringAtual + resultadosExpressoes[indice];
-		// ^-- undefined no fim
 		return stringConcatenada + stringAtual
 			+ (resultadosExpressoes[indice] !== undefined
 				? resultadosExpressoes[indice]
 				: ""
 			);
-
 	}, "");
-
-
 }
-
-
 
 // FIRST test case
 const a = 10;
