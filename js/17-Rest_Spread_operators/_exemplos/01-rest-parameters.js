@@ -14,13 +14,13 @@
 // };
 
 // * Diferenças entre a variável "arguments" e o "rest operator"
-function somarNumeros(...numeros) {
+function somarNumeros2(...numeros) {
 	return numeros
 		.filter(elemento => typeof elemento === "number")
 		.reduce((soma, numero) => soma + numero, 0);
 };
 
-somarNumeros(1, 4, 8, 50);
+somarNumeros2(1, 4, 8, 50);
 
 // console.log(somarNumeros(1, 2, 3, 4));
 // console.log(somarNumeros("abc", 2, 3, 4));
