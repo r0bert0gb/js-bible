@@ -70,7 +70,9 @@ const tasksSortedByIds = (
 
 	console.log(`Quantity of the missing taskIds is ${arrayTasksOriginal.filter(task => !task.hasOwnProperty("taskId")).length}`);
 
-	return tasksWithIds.sort((task1, task2) => task1.taskId - task2.taskId);
+	return tasksWithIds.sort(
+		(task1, task2) => task1.taskId - task2.taskId
+	);
 
 };
 
