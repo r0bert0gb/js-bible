@@ -38,8 +38,6 @@ console.log(meuObjeto2);
 /*
 * 2 Shorthand method names
 -------------------------------------*/
-
-
 // Para funções normais, não para "arrow functions"! Lembrar do "this"
 
 const meuCarro = (make, year) => {

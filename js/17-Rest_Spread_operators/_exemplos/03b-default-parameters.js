@@ -8,7 +8,6 @@ console.log(multiplicador(5));
 
 const aviso = (title) => {
 
-
 	title !== undefined
 		? `O texto do botão é ${title}, mas a cor não foi informada!`
 		: "Texto e cor não foram informados";
