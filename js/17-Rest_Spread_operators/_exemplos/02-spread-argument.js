@@ -21,19 +21,19 @@ const array3 = array1.concat(array2);
 
 const array4 = array1.concat(array2).concat(6);
 
-console.log(array3);
-console.log(array4);
+console.log(array3); // 1 2 3 4 5
+console.log(array4); // 1 2 3 4 5 6
 
 // Usando "spread operator"
 const array5 = [...array1, ...array2, "último"];
-console.log(array5);
+console.log(array5); // 1 2 3 4 5 'último'
 
 //ANCHOR Exemplo 3: criar data
 const dataInfo = [2025, 5, 10];
 
 const data = new Date(...dataInfo);
 
-console.log(data);
+console.log(data); // 2025-06-10T03:00:00.000Z
 
 //ANCHOR Exemplo 4: copiar valores de um array
 const meuArray = ["a", 5, [], true];
@@ -64,7 +64,6 @@ objetoCopiado.valor3.pop();
 console.log(meuObjeto); // { valor1: 10, valor2: 'c', valor3: [1] }
 console.log(objetoCopiado); // { valor1: 20, valor2: 'c', valor3: [1] }
 // ! Shallow Copy
-
 
 //ANCHOR Exemplo 6: spread de strings
 const minhaString = "Olá, mundo!";

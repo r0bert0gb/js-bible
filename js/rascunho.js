@@ -1,14 +1,9 @@
-function geraClosure() {
-	var variavelInterna = 0;
+let array = ["John", "Smith"];
 
-	function fnClosure(valor) {
+// atribuição destructuring (de array)
 
-		console.dir(fnClosure);
+let [nome, sobrenome] = array;
 
-		return variavelInterna + valor;
-	}
+console.log(`Nome: ${nome} \nSobrenome: ${sobrenome}`);
 
-	return fnClosure;
-}
 
-var testaClosure = geraClosure();

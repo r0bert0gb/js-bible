@@ -16,8 +16,6 @@
 // 
 // const {a: a, b: b} = meuObjeto;
 
-// Se o objeto tiver propriedades demais
-
 // console.log(a, b);
 
 // ANCHOR Ex2: igual acima, mas usando shorthand prop. names
@@ -29,8 +27,7 @@
 
 // const {a, b} = meuObjeto;
 
-// ANCHOR Ex3: Atribuição usando OBJ DESTR + shorthand property
-
+// ANCHOR Ex3: Atribuição usando destructuring + shorthand property
 // const meuObjeto = {
 // 	a: 10,
 // 	b: true
@@ -57,10 +54,10 @@
 // const {a, b} = undefined; //erro
 // const {a, b} = null; //erro
 
-// prevenir contra atribuição de undefined ou null
+// prevenção contra atribuição de undefined ou null
 // const val = undefined;
 
-// const {a, b} = val || {};
+// const {a, b} = val || {}; // falsy value
 
 // console.log(a, b); // undefined undefined
 
@@ -79,7 +76,7 @@
 
 // console.log(a, b);
 
-// ANCHOR Ex6: Rest operador em destruct de objeto
+// ANCHOR Ex6: Rest operator em destruct de objeto
 
 // const meuObjeto = {
 // 	a: 10,
@@ -135,14 +132,14 @@
 // console.log(novoA, novoB, novoC);
 
 // ANCHOR Ex10: Destruct com objeto nested
-const meuObjeto = {
-	a: 1,
-	b: 2,
-	objetoNested: {
-		c: 3,
-		d: 4
-	}
-};
+// const meuObjeto = {
+// 	a: 1,
+// 	b: 2,
+// 	objetoNested: {
+// 		c: 3,
+// 		d: 4
+// 	}
+// };
 
 // const {a, b, objetoNested: objetoNested} = meuObjeto;
 
@@ -166,10 +163,10 @@ const meuObjeto = {
 	novos nomes de variáveis,
 	destructuring de objetos NESTED
 */
-const {
-	a,
-	b,
-	objetoNested: {c, d: novoD, e: novoE = 'valor default E'}
-} = meuObjeto;
+// const {
+// 	a,
+// 	b,
+// 	objetoNested: {c, d: novoD, e: novoE = 'valor default E'}
+// } = meuObjeto;
 
-console.log(a, b, c, novoD, novoE);
+// console.log(a, b, c, novoD, novoE);

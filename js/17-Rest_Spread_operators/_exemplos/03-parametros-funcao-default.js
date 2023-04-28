@@ -6,7 +6,6 @@ const multiplicador = (numero, mult = 2) => numero * mult;
 
 // Normal
 console.log(multiplicador(5, 8)); // 40
-console.log(multiplicador(5, 8)); // 40
 
 // Faltando mult
 console.log(multiplicador(5)); // 10. multi. valor default -> 2
@@ -47,9 +46,9 @@ itemSupermercado3("Laranja", 5); // Laranja, 5, { objeto }
 const aviso = (texto) => {
 
 	console.log(
-	texto !== undefined
-		? `Texto possui o valor ${texto}, porém falta a cor!`
-		: "Texto e nem o título foram informados!"
+		texto !== undefined
+			? `Texto possui o valor ${texto}, porém falta a cor!`
+			: "Texto e nem o título foram informados!"
 	);
 
 	throw new Error("A função \"btn\" deve ser chamada com dois argumentos");
