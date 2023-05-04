@@ -7,38 +7,41 @@ This function should return array of two elements:
 
 Use destructuring to parse results of the function calls.
 */
+
 let min, max;
 
-const minMax = (...numeros) => {
+const minMax = (...argumentos) => [
+	argumentos.reduce(
+		(menorValor, valorAtual) => valorAtual < menorValor
+			? menorValor = valorAtual
+			: menorValor
+	),
+	argumentos.reduce(
+		(maiorValor, valorAtual) => valorAtual > maiorValor
+			? maiorValor = valorAtual
+			: maiorValor
+	)
+];
 
-	numeros.forEach((elemento, indice) => {
+// De outro jeito
+// const minMax = (...argumentos) => {
 
-		if (indice === 0) {
-			min = elemento;
-			max = elemento;
-		}
+// 	let menorValor = argumentos[0];
+// 	let maiorValor = argumentos[0];
 
-		if (elemento < min) {
+// 	for (let elemento of argumentos) {
 
-			min = elemento;
-		}
+// 		if(elemento < menorValor) menorValor = elemento;
+// 		if(elemento > maiorValor) maiorValor = elemento;
+// 	}
 
-		if (elemento > max) {
-
-			max = elemento;
-		}
-	});
-
-	return [min, max];
-};
+// 	return [menorValor, maiorValor];
+// };
 
 /* call here "minMax" function with arguments 24, 5, 34, 10 */
-
-minMax(24, 5, 34, 10);
-
+[min, max] = minMax(24, 5, 34, 10);
 console.log(min, max); // 5, 34
 
 /* call here "minMax" function with arguments 18, 23, 103, 70, 80, 25 */
-minMax(18, 23, 103, 70, 80, 25);
-
+[min, max] = minMax(18, 23, 103, 70, 80, 25);
 console.log(min, max); // 18, 103

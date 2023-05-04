@@ -1,7 +1,7 @@
 /*
 Create "processPosts" function that will return new array of posts.
 
-Notice that some property names in each post are modified and each postId is incremented by 1000.
+Notice that some propery names in each post are modified and each postId is incremented by 1000.
 
 Original array of posts should not be mutated.
 */
@@ -23,18 +23,29 @@ const posts = [
 	}
 ];
 
+// const processPosts = (arrayPosts) => {
+
+// 	return arrayPosts.map({
+// 		postId,
+// 		author: postAuthor,
+// 		commentsQty: postCommentsQty = 0
+// 	} =>
+// 	);
+// };
+
+// Object Destructuring nos argumentos da função "map"
 const processPosts = (arrayPosts) =>
-	arrayPosts.map(
-		({
-			postId,
-			author: postAuthor,
-			commentsQty: postCommentsQty = 0
-		}) => ({
-			postAuthor,
-			postCommentsQty,
-			postId: postId + 1000
-		})
-	);
+	arrayPosts.map(({
+		postId,
+		author: postAuthor,
+		commentsQty: postCommentsQty = 0
+	}) => ({
+		postAuthor,
+		postCommentsQty,
+		postId: postId + 1000
+	}));
+
+
 
 console.log(processPosts(posts));
 /*

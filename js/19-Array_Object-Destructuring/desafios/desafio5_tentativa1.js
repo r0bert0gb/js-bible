@@ -14,15 +14,16 @@ let person = {
 	cartId: 435
 };
 
-// para remover: _id, processed, cart[]
+// modo braçal / burro
+// delete person._id;
+// delete person.processed;
+// delete person.cart;
 
-let _id, processed, cart;
+person = {
 
-({_id, processed, cart, ...person} = person);
+};
 
 console.log(person);
-
-
   /*
 {
   index: 4,

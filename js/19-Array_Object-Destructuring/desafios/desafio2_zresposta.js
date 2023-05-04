@@ -15,8 +15,6 @@ const minMax = (...numeros) => [
 	numeros.reduce((max, numero) => numero > max ? numero : max)
 ];
 
-
-
 /* call here "minMax" function with arguments 24, 5, 34, 10 */
 [min, max] = minMax(24, 5, 34, 10);
 

@@ -2,11 +2,7 @@
 Modify parameters section in the "processQuantities" function to match console.log outputs
 */
 
-const processQuantities = ([ // destructuring
-	minQty,
-	maxQty,
-	defaultQty = 0
-]) => {
+const processQuantities = ([minQty, maxQty, defaultQty = 0]) => {
 	console.log(minQty); // 8
 	console.log(maxQty); // 29
 	console.log(defaultQty); // 0
@@ -15,4 +11,7 @@ const processQuantities = ([ // destructuring
 
 const qtyRange = [8, 29];
 
+processQuantities(qtyRange);
+
+// para o Node + code runner
 console.log(processQuantities(qtyRange));

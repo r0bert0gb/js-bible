@@ -13,7 +13,7 @@
 // const a = meuObjeto.a;
 // const b = meuObjeto.b;
 
-// 
+//
 // const {a: a, b: b} = meuObjeto;
 
 // console.log(a, b);
@@ -163,10 +163,10 @@
 	novos nomes de variáveis,
 	destructuring de objetos NESTED
 */
-// const {
-// 	a,
-// 	b,
-// 	objetoNested: {c, d: novoD, e: novoE = 'valor default E'}
-// } = meuObjeto;
+const {
+	a,
+	b,
+	objetoNested: {c, d: novoD, e: novoE = 'valor default E'}
+} = meuObjeto;
 
-// console.log(a, b, c, novoD, novoE);
+console.log(a, b, c, novoD, novoE);
