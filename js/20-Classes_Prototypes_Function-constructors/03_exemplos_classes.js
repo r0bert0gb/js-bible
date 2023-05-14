@@ -168,12 +168,11 @@ Herança de classe (novo protótipo na prototype chain)
 Setar propriedades em classes diferentes
 -------------------------------------*/
 
-class ComputerAccessories {
-
-	constructor(props) {
-		this.compatibility = props.compatibility || ["PC", "Mac"];
-	}
-}
+// class ComputerAccessories {
+// 	constructor(props) {
+// 		this.compatibility = props.compatibility || ["PC", "Mac"];
+// 	}
+// }
 
 // Sem "super"
 // class ComputerMouse extends ComputerAccessories {
@@ -189,16 +188,129 @@ class ComputerAccessories {
 // 		this.type = props.type;
 // 	}
 // }
+// class ComputerMouse extends ComputerAccessories {
+// 	constructor(props) {
+// 		super(props);
+// 		this.type = props.type;
+// 	}
+// }
+
+// const myMouse = new ComputerMouse({
+// 	compatibility: ["Mac"],
+// 	type: "Optical"
+// });
+
+// console.log(myMouse);
+
+/*
+* Exemplo 10
+Adicionando métodos em classes DIFERENTES
+-------------------------------------*/
+
+// class ComputerAccessories {
+// 	constructor(props) {
+// 		this.compatibility = props.compatibility || ["PC", "Mac"];
+// 	}
+
+// 	compatibilityInfo() {
+// 		this.compatibility.forEach(
+// 			(elemento) => console.log(`Acessório compatível com ${elemento}`)
+// 		);
+// 	}
+// }
+
+// class ComputerMouse extends ComputerAccessories {
+// 	constructor(props) {
+// 		super(props);
+// 		this.type = props.type;
+// 	}
+
+// 	mouseInfo() {
+// 		console.log(`O tipo do mouse é ${this.type}`);
+// 		// return `O tipo do mouse é ${this.type}`;
+// 	}
+// }
+
+// const meuMouse = new ComputerMouse({compatibility: ["Mac", "Tablet"], type: "Bluetooth"});
+
+// meuMouse.compatibilityInfo();
+
+// meuMouse.mouseInfo();
+
+/*
+* Exemplo 11
+typeof e instanceof com classes
+-------------------------------------*/
+
+class ComputerAccessories {
+	constructor(props) {
+		this.compatibility = props.compatibility || ["PC", "Mac"];
+	}
+
+	compatibilityInfo() {
+		this.compatibility.forEach(
+			(elemento) => console.log(`Acessório compatível com ${elemento}`)
+		);
+	}
+}
+
 class ComputerMouse extends ComputerAccessories {
 	constructor(props) {
 		super(props);
 		this.type = props.type;
 	}
+
+	mouseInfo() {
+		console.log(`O tipo do mouse é ${this.type}`);
+		// return `O tipo do mouse é ${this.type}`;
+	}
 }
 
-const myMouse = new ComputerMouse({
-	compatibility: ["Mac"],
-	type: "Optical"
-});
+const meuMouse = new ComputerMouse({compatibility: ["Mac", "Tablet"], type: "Bluetooth"});
 
-console.log(myMouse);
+console.log(typeof ComputerMouse);
+// function. Por baixo dos panos, classes são funções construtoras
+
+console.log(meuMouse instanceof ComputerMouse); // true
+console.log(meuMouse instanceof ComputerAccessories); // true
+console.log(meuMouse instanceof Object); // true
+// console.log(meuMouse instanceof null); // Erro. Right side is not an Object
+
+console.log(typeof ComputerMouse.prototype); // object
+console.log(typeof ComputerMouse.prototype.constructor); // function
+
+console.log(ComputerMouse.prototype.constructor === ComputerMouse); // true
+
+console.log(meuMouse.__proto__ === ComputerMouse.prototype); // true
+console.log(meuMouse.__proto__.__proto__ === ComputerAccessories.prototype); // true
+console.log(meuMouse.__proto__.__proto__.__proto__ === Object.prototype); // true
+console.log(meuMouse.__proto__.__proto__.__proto__.__proto__ === null); // true
+
+
+/*
+* Exemplo 12
+Métodos ESTÁTICOS
+-------------------------------------*/
+
+// class ComputerMouse {
+// 	constructor(props) {
+// 		this.type = props.type;
+// 	}
+
+// 	static ownClassMethod() {
+// 		console.log("Essa classe seta props para os mouses");
+// 	}
+
+// 	mouseInfo() {
+// 		console.log(`O tipo do mouse é ${this.type}`);
+// 	}
+// }
+
+// const meuMouse = new ComputerMouse({type: "Gaming"});
+
+// console.log(meuMouse);
+
+// meuMouse.mouseInfo();
+// meuMouse.ownClassMethod(); // Erro: ownClassMethod is not a function
+
+// ComputerMouse.ownClassMethod();

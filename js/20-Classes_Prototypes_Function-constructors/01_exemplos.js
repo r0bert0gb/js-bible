@@ -162,5 +162,4 @@ const propsForLargePlane = {
 };
 const largePlane = new CivilPlane(propsForLargePlane);
 
-
 console.log(smallPlane instanceof CivilPlane);
